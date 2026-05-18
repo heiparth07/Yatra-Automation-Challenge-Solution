@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-17T23:19:28 EDT" name="Yatra Fare Calendar Regression Suite" finished-at="2026-05-17T23:20:08 EDT" duration-ms="40840">
+    <groups>
+    </groups>
+    <test started-at="2026-05-17T23:19:28 EDT" name="Fare Calendar Functional Tests" finished-at="2026-05-17T23:20:08 EDT" duration-ms="40840">
+      <class name="com.yatra.automation.tests.FareCalendarTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:28 EDT" name="setUp" finished-at="2026-05-17T23:19:34 EDT" duration-ms="6290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="allFaresShouldBePositiveIntegers()[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:34 EDT" name="allFaresShouldBePositiveIntegers" description="All displayed fares are positive integers" finished-at="2026-05-17T23:19:37 EDT" duration-ms="2745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allFaresShouldBePositiveIntegers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:37 EDT" name="tearDown" finished-at="2026-05-17T23:19:37 EDT" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:37 EDT" name="setUp" finished-at="2026-05-17T23:19:43 EDT" duration-ms="6269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="crossMonthComparisonShouldIdentifyCheaperMonth()[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:43 EDT" name="crossMonthComparisonShouldIdentifyCheaperMonth" description="Cross-month comparison surfaces the cheaper of the two months" finished-at="2026-05-17T23:19:45 EDT" duration-ms="1663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crossMonthComparisonShouldIdentifyCheaperMonth -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:45 EDT" name="tearDown" finished-at="2026-05-17T23:19:45 EDT" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:45 EDT" name="setUp" finished-at="2026-05-17T23:19:51 EDT" duration-ms="5521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="eachMonthShouldExposeAtLeastOneFare()[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:51 EDT" name="eachMonthShouldExposeAtLeastOneFare" description="Each month panel surfaces at least one valid fare" finished-at="2026-05-17T23:19:53 EDT" duration-ms="2000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eachMonthShouldExposeAtLeastOneFare -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:53 EDT" name="tearDown" finished-at="2026-05-17T23:19:53 EDT" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:53 EDT" name="setUp" finished-at="2026-05-17T23:19:59 EDT" duration-ms="5500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fareCalendarShouldDisplayCurrentAndNextMonth()[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:19:59 EDT" name="fareCalendarShouldDisplayCurrentAndNextMonth" description="Fare calendar opens and renders two month panels" finished-at="2026-05-17T23:20:01 EDT" duration-ms="2009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fareCalendarShouldDisplayCurrentAndNextMonth -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:20:01 EDT" name="tearDown" finished-at="2026-05-17T23:20:01 EDT" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:20:01 EDT" name="setUp" finished-at="2026-05-17T23:20:06 EDT" duration-ms="5662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="lowestFareShouldBeMinOfDisplayedFares()[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:20:06 EDT" name="lowestFareShouldBeMinOfDisplayedFares" description="Lowest fare extraction returns a value within the month&#039;s range" finished-at="2026-05-17T23:20:08 EDT" duration-ms="1776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lowestFareShouldBeMinOfDisplayedFares -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.yatra.automation.tests.FareCalendarTest@3c19aaa5]" started-at="2026-05-17T23:20:08 EDT" name="tearDown" finished-at="2026-05-17T23:20:08 EDT" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.yatra.automation.tests.FareCalendarTest -->
+    </test> <!-- Fare Calendar Functional Tests -->
+  </suite> <!-- Yatra Fare Calendar Regression Suite -->
+</testng-results>
