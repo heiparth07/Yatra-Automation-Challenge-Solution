@@ -32,7 +32,7 @@ src/
         └── FareCalendarTest.java   # @Test methods with TestNG assertions
 testng.xml                          # Suite config (parameterized for browser/headless)
 pom.xml                             # Maven build with surefire-plugin
-.github/workflows/ci.yml            # Headless CI on every push
+.github/workflows/ci.yml            # Build check on push; live UI suite on demand
 ```
 
 **Key design choices:**
@@ -41,7 +41,7 @@ pom.xml                             # Maven build with surefire-plugin
 - **Explicit waits only** (`WebDriverWait` + `ExpectedConditions`) — no `Thread.sleep` in test code, so the suite handles network jitter without flakiness or wasted runtime.
 - **Independent tests**: every `@Test` gets a fresh browser via `@BeforeMethod`, so failures isolate cleanly and tests can run in any order or in parallel.
 - **Parameterized browser/headless** through `testng.xml` so the same suite runs locally with a visible browser and in CI headlessly.
-- **CI-ready**: GitHub Actions runs the full suite headless on every push and uploads Surefire reports as artifacts.
+- **Pragmatic CI design**: every push runs a fast build/compile check; the live UI suite runs on demand (see below).
 
 ## Running locally
 
@@ -52,6 +52,26 @@ mvn test
 # Run headless (mirrors CI)
 mvn test -Dheadless=true
 ```
+
+## Continuous integration
+
+CI is split into two jobs to keep the pipeline reliable:
+
+- **Build & compile check** — runs on every push and pull request. It compiles
+  the main and test sources (`mvn clean test-compile`), so a broken build or
+  invalid test code fails fast. Deterministic, no browser, no network.
+- **Live UI regression (on-demand)** — the full Selenium suite drives the
+  **live yatra.com** site. Because that site applies bot protection and
+  region-dependent rendering, the suite is reliable from a local machine but
+  flaky on hosted CI runners (datacenter IPs, headless). Rather than gate every
+  commit on a third-party site we don't control, this job runs **on demand** via
+  the "Run workflow" button and uploads Surefire reports as artifacts.
+
+This mirrors how teams handle end-to-end tests against external sites: keep the
+fast, deterministic checks in the commit gate, and run the live, inherently
+non-deterministic tests deliberately. The natural next step for full CI
+coverage would be to run the suite against a captured snapshot of the page so it
+becomes hermetic.
 
 ## Tech stack
 
